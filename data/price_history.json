@@ -20,16 +20,5 @@
     "last_source": "naver",
     "lowest_ever": 1350000,
     "last_alert_price": null
-  },
-  "lenovo-ideapad-slim5": {
-    "name": "레노버 아이디어패드 Slim5 (16GB/512GB)",
-    "last_price": 959000,
-    "last_seen": "2026-07-14 01:16 KST",
-    "last_title": "레노버 아이디어패드 Slim5x 14Q8X9 83HL000PKR 16GB, 512GB",
-    "last_link": "https://search.shopping.naver.com/catalog/54857048107",
-    "last_mall": "네이버",
-    "last_source": "naver",
-    "lowest_ever": 959000,
-    "last_alert_price": null
   }
 }
