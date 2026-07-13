@@ -1,0 +1,44 @@
+name: price-monitor
+
+on:
+  schedule:
+    # UTC 기준. 00:00 / 12:00 UTC = 09:00 / 21:00 KST (일 2회)
+    - cron: "0 0,12 * * *"
+  workflow_dispatch: {}   # 수동 실행 버튼
+
+permissions:
+  contents: write          # price_history.json 커밋용
+
+concurrency:
+  group: price-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run monitor
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python main.py
+
+      - name: Commit updated price history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/price_history.json
+          git diff --staged --quiet || git commit -m "chore: update price history [skip ci]"
+          git push

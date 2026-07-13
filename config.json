@@ -1,0 +1,32 @@
+{
+  "drop_threshold": 0.10,
+  "models": [
+    {
+      "id": "samsung-galaxybook4",
+      "name": "삼성 갤럭시북4 (Core5/16GB/512GB)",
+      "query": "삼성 갤럭시북4 16GB 512GB",
+      "include_keywords": ["갤럭시북4"],
+      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "액정", "정품스킨"],
+      "min_price": 700000,
+      "max_price": 1600000
+    },
+    {
+      "id": "lg-gram",
+      "name": "LG 그램 (Ultra5/16GB/512GB)",
+      "query": "LG 그램 2025 16GB 512GB",
+      "include_keywords": ["그램"],
+      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "액정", "스킨"],
+      "min_price": 900000,
+      "max_price": 1700000
+    },
+    {
+      "id": "lenovo-ideapad-slim5",
+      "name": "레노버 아이디어패드 Slim5 (Ryzen7/16GB/512GB)",
+      "query": "레노버 아이디어패드 슬림5 16GB",
+      "include_keywords": ["아이디어패드"],
+      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "액정", "스킨"],
+      "min_price": 700000,
+      "max_price": 1500000
+    }
+  ]
+}
