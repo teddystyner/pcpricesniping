@@ -18,8 +18,9 @@ def _strip_tags(s: str) -> str:
 
 def search_naver_lowest(model: dict) -> dict | None:
     """model 설정에 맞는 상품 중 최저가 1건을 반환. 없으면 None."""
-    cid = os.environ.get("NAVER_CLIENT_ID")
-    csec = os.environ.get("NAVER_CLIENT_SECRET")
+    # GitHub Secret 붙여넣기 시 딸려오는 줄바꿈/공백 제거 (헤더 오류 방지)
+    cid = (os.environ.get("NAVER_CLIENT_ID") or "").strip()
+    csec = (os.environ.get("NAVER_CLIENT_SECRET") or "").strip()
     if not cid or not csec:
         raise RuntimeError("환경변수 NAVER_CLIENT_ID / NAVER_CLIENT_SECRET 가 설정되지 않았습니다.")
 
