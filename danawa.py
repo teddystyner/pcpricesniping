@@ -25,6 +25,7 @@ def _to_int(s: str) -> int | None:
 
 def search_danawa_lowest(model: dict) -> dict | None:
     include = model.get("include_keywords", [])
+    any_kw = model.get("any_keywords", [])
     exclude = model.get("exclude_keywords", [])
     min_price = model.get("min_price", 0)
     max_price = model.get("max_price")
@@ -46,6 +47,8 @@ def search_danawa_lowest(model: dict) -> dict | None:
             title = name_el.get_text(strip=True)
             ntitle = _norm(title)
             if any(_norm(k) not in ntitle for k in include):
+                continue
+            if any_kw and not any(_norm(k) in ntitle for k in any_kw):
                 continue
             if any(_norm(k) in ntitle for k in exclude):
                 continue

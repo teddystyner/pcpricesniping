@@ -21,11 +21,12 @@
     },
     {
       "id": "lenovo-ideapad-slim5",
-      "name": "레노버 아이디어패드 Slim5 (Ryzen7/16GB/512GB)",
+      "name": "레노버 아이디어패드 Slim5 (16GB/512GB)",
       "query": "레노버 아이디어패드 슬림5 16GB",
       "include_keywords": ["아이디어패드"],
-      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "액정", "스킨"],
-      "min_price": 700000,
+      "any_keywords": ["slim5", "슬림5"],
+      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "액정", "스킨", "slim1", "슬림1", "slim3", "슬림3"],
+      "min_price": 800000,
       "max_price": 1500000
     }
   ]

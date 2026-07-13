@@ -30,6 +30,7 @@ def search_naver_lowest(model: dict) -> dict | None:
     items = resp.json().get("items", [])
 
     include = model.get("include_keywords", [])
+    any_kw = model.get("any_keywords", [])
     exclude = model.get("exclude_keywords", [])
     min_price = model.get("min_price", 0)
     max_price = model.get("max_price")
@@ -41,6 +42,9 @@ def search_naver_lowest(model: dict) -> dict | None:
 
         # 필수 키워드가 하나라도 빠지면 제외 (엉뚱한 모델 방지)
         if any(_norm(k) not in ntitle for k in include):
+            continue
+        # any_keywords: 표기가 여러 개일 때 최소 하나는 포함돼야 함 (예: slim5/슬림5)
+        if any_kw and not any(_norm(k) in ntitle for k in any_kw):
             continue
         # 제외 키워드(액세서리/중고 등)가 있으면 제외
         if any(_norm(k) in ntitle for k in exclude):
