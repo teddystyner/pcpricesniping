@@ -107,6 +107,11 @@ def run() -> None:
                 alerted = True
                 print(f"  🔔 알림! 하락률 {drop * 100:.1f}%")
 
+        # 트렌드용 시계열 누적 (최근 400개 = 2회/일 기준 약 6개월)
+        points = rec.get("points", [])
+        points.append({"t": now, "price": cur})
+        points = points[-400:]
+
         hist[mid] = {
             "name": model["name"],
             "last_price": cur,
@@ -117,6 +122,7 @@ def run() -> None:
             "last_source": best["source"],
             "lowest_ever": lowest_ever,
             "last_alert_price": cur if alerted else rec.get("last_alert_price"),
+            "points": points,
         }
 
     if alerts:
@@ -128,6 +134,14 @@ def run() -> None:
 
     save_history(hist)
     print("이력 저장 완료.")
+
+    # 트렌드 차트(chart.html) 갱신
+    try:
+        from build_chart import build
+        build()
+        print("트렌드 차트 갱신: chart.html")
+    except Exception as e:  # noqa: BLE001
+        print(f"차트 생성 건너뜀: {e}")
 
 
 def notify_test() -> None:
