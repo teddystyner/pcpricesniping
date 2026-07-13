@@ -25,7 +25,7 @@ def search_naver_lowest(model: dict) -> dict | None:
         raise RuntimeError("환경변수 NAVER_CLIENT_ID / NAVER_CLIENT_SECRET 가 설정되지 않았습니다.")
 
     headers = {"X-Naver-Client-Id": cid, "X-Naver-Client-Secret": csec}
-    params = {"query": model["query"], "display": 100, "sort": "asc"}  # 가격 오름차순
+    params = {"query": model["query"], "display": 100, "sort": "sim"}  # 정확도순
     resp = requests.get(NAVER_URL, headers=headers, params=params, timeout=15)
     resp.raise_for_status()
     items = resp.json().get("items", [])
@@ -37,9 +37,12 @@ def search_naver_lowest(model: dict) -> dict | None:
     max_price = model.get("max_price")
 
     best = None
+    sample = []  # 매칭 실패 시 진단용: 네이버가 돌려준 상위 결과
     for it in items:
         title = _strip_tags(it.get("title", ""))
         ntitle = _norm(title)
+        if len(sample) < 12:
+            sample.append((it.get("lprice"), title, it.get("mallName")))
 
         # 필수 키워드가 하나라도 빠지면 제외 (엉뚱한 모델 방지)
         if any(_norm(k) not in ntitle for k in include):
@@ -69,5 +72,10 @@ def search_naver_lowest(model: dict) -> dict | None:
         }
         if best is None or price < best["price"]:
             best = cand
+
+    if best is None:
+        print(f"  [naver] 매칭 0건 (총 {len(items)}개 수신). 상위 결과 샘플:")
+        for lprice, title, mall in sample:
+            print(f"       - {lprice}원 | {title} | {mall}")
 
     return best
