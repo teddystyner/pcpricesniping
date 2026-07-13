@@ -2,7 +2,7 @@
   "samsung-galaxybook4": {
     "name": "삼성 갤럭시북4 (16GB/512GB)",
     "last_price": 1279000,
-    "last_seen": "2026-07-14 01:16 KST",
+    "last_seen": "2026-07-14 01:20 KST",
     "last_title": "삼성 노트북 갤럭시북4 NT750XGR i7 16GB 512GB 사무용 업무용 고성능",
     "last_link": "https://smartstore.naver.com/main/products/7325458935",
     "last_mall": "주식회사 에프엔에스립합",
@@ -13,12 +13,23 @@
   "lg-gram": {
     "name": "LG 그램 (신형/16GB/512GB)",
     "last_price": 1350000,
-    "last_seen": "2026-07-14 01:16 KST",
+    "last_seen": "2026-07-14 01:20 KST",
     "last_title": "LG전자 LG그램 16Z90S-GAOWK RAM 16GB, 512GB",
     "last_link": "https://search.shopping.naver.com/catalog/55023661527",
     "last_mall": "네이버",
     "last_source": "naver",
     "lowest_ever": 1350000,
+    "last_alert_price": null
+  },
+  "lenovo-ideapad-slim5": {
+    "name": "레노버 아이디어패드 Slim5 (16GB/512GB)",
+    "last_price": 1373920,
+    "last_seen": "2026-07-14 01:20 KST",
+    "last_title": "레노버 아이디어패드 슬림 5 프로 14IAP7 i5-12세대 RTX2050 16G 512G 윈11 82SH003WKR 게임용 영상작업용 코딩용",
+    "last_link": "https://link.coupang.com/re/PCSNAVERPCSDP?pageKey=6710768312&ctag=6710768312&lptag=I19657621178&itemId=19657621178&vendorItemId=86757218451&spec=10305197",
+    "last_mall": "쿠팡",
+    "last_source": "naver",
+    "lowest_ever": 1373920,
     "last_alert_price": null
   }
 }
