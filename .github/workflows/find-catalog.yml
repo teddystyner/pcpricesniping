@@ -1,0 +1,26 @@
+name: find-catalog
+
+# 정밀 추적(catalog_id) 고정을 위해, 모델별 카탈로그 후보+ID를 로그로 출력한다.
+# Actions 탭에서 이 워크플로를 Run workflow 하면 로그에 후보가 뜬다.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Find catalog candidates
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+        run: python find_catalog.py
