@@ -7,15 +7,13 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
+from matcher import title_matches
+
 SEARCH_URL = "https://search.danawa.com/dsearch.php"
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
 )
-
-
-def _norm(s: str) -> str:
-    return re.sub(r"\s+", "", s or "").lower()
 
 
 def _to_int(s: str) -> int | None:
@@ -24,9 +22,6 @@ def _to_int(s: str) -> int | None:
 
 
 def search_danawa_lowest(model: dict) -> dict | None:
-    include = model.get("include_keywords", [])
-    any_kw = model.get("any_keywords", [])
-    exclude = model.get("exclude_keywords", [])
     min_price = model.get("min_price", 0)
     max_price = model.get("max_price")
 
@@ -45,12 +40,7 @@ def search_danawa_lowest(model: dict) -> dict | None:
                 continue
 
             title = name_el.get_text(strip=True)
-            ntitle = _norm(title)
-            if any(_norm(k) not in ntitle for k in include):
-                continue
-            if any_kw and not any(_norm(k) in ntitle for k in any_kw):
-                continue
-            if any(_norm(k) in ntitle for k in exclude):
+            if not title_matches(title, model):
                 continue
 
             price = _to_int(price_el.get_text())

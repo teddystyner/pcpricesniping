@@ -3,30 +3,42 @@
   "models": [
     {
       "id": "samsung-galaxybook4",
-      "name": "삼성 갤럭시북4 (Core5/16GB/512GB)",
+      "name": "삼성 갤럭시북4 (16GB/512GB)",
       "query": "삼성 갤럭시북4 16GB 512GB",
       "include_keywords": ["갤럭시북4"],
-      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "액정", "정품스킨"],
-      "min_price": 700000,
+      "keyword_groups": [
+        ["16gb", "16g"],
+        ["512gb", "512g", "ssd512"]
+      ],
+      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "액정", "정품스킨", "스킨", "256gb", "256g", "128gb", "1tb"],
+      "min_price": 850000,
       "max_price": 1600000
     },
     {
       "id": "lg-gram",
-      "name": "LG 그램 (Ultra5/16GB/512GB)",
+      "name": "LG 그램 (신형/16GB/512GB)",
       "query": "LG 그램 2025 16GB 512GB",
       "include_keywords": ["그램"],
-      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "액정", "스킨"],
-      "min_price": 900000,
+      "keyword_groups": [
+        ["16gb", "16g"],
+        ["512gb", "512g", "ssd512"]
+      ],
+      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "액정", "스킨", "256gb", "256g", "1tb", "11세대", "12세대", "13세대", "10세대", "zb95", "z90p", "z90q", "z95p"],
+      "min_price": 1100000,
       "max_price": 1700000
     },
     {
       "id": "lenovo-ideapad-slim5",
       "name": "레노버 아이디어패드 Slim5 (16GB/512GB)",
-      "query": "레노버 아이디어패드 슬림5 16GB",
+      "query": "레노버 아이디어패드 슬림5 16GB 512GB",
       "include_keywords": ["아이디어패드"],
       "any_keywords": ["slim5", "슬림5"],
-      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "액정", "스킨", "slim1", "슬림1", "slim3", "슬림3"],
-      "min_price": 800000,
+      "keyword_groups": [
+        ["16gb", "16g"],
+        ["512gb", "512g", "ssd512"]
+      ],
+      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "액정", "스킨", "slim1", "슬림1", "slim3", "슬림3", "256gb", "256g", "128gb", "1tb"],
+      "min_price": 850000,
       "max_price": 1500000
     }
   ]
