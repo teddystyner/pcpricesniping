@@ -2,7 +2,7 @@
   "samsung-galaxybook4": {
     "name": "삼성 갤럭시북4 (Core5/16GB/512GB)",
     "last_price": 1058980,
-    "last_seen": "2026-07-14 00:47 KST",
+    "last_seen": "2026-07-14 00:56 KST",
     "last_title": "삼성전자갤럭시북4NT750XGR-A31A",
     "last_link": "https://prod.danawa.com/info/?pcode=46742135&keyword=%EC%82%BC%EC%84%B1+%EA%B0%A4%EB%9F%AD%EC%8B%9C%EB%B6%814+16GB+512GB&cate=112758",
     "last_mall": "다나와",
@@ -13,12 +13,23 @@
   "lg-gram": {
     "name": "LG 그램 (Ultra5/16GB/512GB)",
     "last_price": 1529000,
-    "last_seen": "2026-07-14 00:47 KST",
+    "last_seen": "2026-07-14 00:56 KST",
     "last_title": "LG전자2025그램15 15ZD80T-GX56K WIN11",
     "last_link": "https://prod.danawa.com/info/?pcode=82472786&keyword=LG+%EA%B7%B8%EB%9E%A8+2025+16GB+512GB&cate=112758",
     "last_mall": "다나와",
     "last_source": "danawa",
     "lowest_ever": 1529000,
+    "last_alert_price": null
+  },
+  "lenovo-ideapad-slim5": {
+    "name": "레노버 아이디어패드 Slim5 (16GB/512GB)",
+    "last_price": 1228990,
+    "last_seen": "2026-07-14 00:56 KST",
+    "last_title": "레노버아이디어패드Slim516IRH10R Core5OLED",
+    "last_link": "https://prod.danawa.com/info/?pcode=78095582&keyword=%EB%A0%88%EB%85%B8%EB%B2%84+%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%ED%8C%A8%EB%93%9C+%EC%8A%AC%EB%A6%BC5+16GB&cate=112758",
+    "last_mall": "다나와",
+    "last_source": "danawa",
+    "lowest_ever": 1228990,
     "last_alert_price": null
   }
 }
