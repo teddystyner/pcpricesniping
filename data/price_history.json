@@ -1,35 +1,35 @@
 {
   "samsung-galaxybook4": {
     "name": "삼성 갤럭시북4 (Core5/16GB/512GB)",
-    "last_price": 1058980,
-    "last_seen": "2026-07-14 01:02 KST",
-    "last_title": "삼성전자갤럭시북4NT750XGR-A31A",
-    "last_link": "https://prod.danawa.com/info/?pcode=46742135&keyword=%EC%82%BC%EC%84%B1+%EA%B0%A4%EB%9F%AD%EC%8B%9C%EB%B6%814+16GB+512GB&cate=112758",
-    "last_mall": "다나와",
-    "last_source": "danawa",
-    "lowest_ever": 1058980,
-    "last_alert_price": null
+    "last_price": 949000,
+    "last_seen": "2026-07-14 01:06 KST",
+    "last_title": "삼성전자 갤럭시북4 삼성노트북 NT750XGR-A31A 16GB, 256GB",
+    "last_link": "https://search.shopping.naver.com/catalog/52647794278",
+    "last_mall": "네이버",
+    "last_source": "naver",
+    "lowest_ever": 949000,
+    "last_alert_price": 949000
   },
   "lg-gram": {
     "name": "LG 그램 (Ultra5/16GB/512GB)",
-    "last_price": 1529000,
-    "last_seen": "2026-07-14 01:02 KST",
-    "last_title": "LG전자2025그램15 15ZD80T-GX56K WIN11",
-    "last_link": "https://prod.danawa.com/info/?pcode=82472786&keyword=LG+%EA%B7%B8%EB%9E%A8+2025+16GB+512GB&cate=112758",
-    "last_mall": "다나와",
-    "last_source": "danawa",
-    "lowest_ever": 1529000,
-    "last_alert_price": null
+    "last_price": 989000,
+    "last_seen": "2026-07-14 01:06 KST",
+    "last_title": "LG 15그램 Gram 15ZB95N I5 11세대 16G SSD512GB",
+    "last_link": "https://smartstore.naver.com/main/products/10243736886",
+    "last_mall": "moduba",
+    "last_source": "naver",
+    "lowest_ever": 989000,
+    "last_alert_price": 989000
   },
   "lenovo-ideapad-slim5": {
     "name": "레노버 아이디어패드 Slim5 (16GB/512GB)",
-    "last_price": 1228990,
-    "last_seen": "2026-07-14 01:02 KST",
-    "last_title": "레노버아이디어패드Slim516IRH10R Core5OLED",
-    "last_link": "https://prod.danawa.com/info/?pcode=78095582&keyword=%EB%A0%88%EB%85%B8%EB%B2%84+%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4%ED%8C%A8%EB%93%9C+%EC%8A%AC%EB%A6%BC5+16GB&cate=112758",
-    "last_mall": "다나와",
-    "last_source": "danawa",
-    "lowest_ever": 1228990,
-    "last_alert_price": null
+    "last_price": 849000,
+    "last_seen": "2026-07-14 01:06 KST",
+    "last_title": "레노버 아이디어패드 슬림5 라이젠7 / i7 16GB 256GB 16인치 노트북",
+    "last_link": "https://smartstore.naver.com/main/products/12651844728",
+    "last_mall": "일렉트로닉마켓",
+    "last_source": "naver",
+    "lowest_ever": 849000,
+    "last_alert_price": 849000
   }
 }
