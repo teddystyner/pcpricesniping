@@ -44,15 +44,22 @@ def _now_str() -> str:
 
 
 def _fetch_lowest(model: dict) -> dict | None:
-    """네이버(메인) → 다나와(보조) 순으로 최저가를 구한다."""
+    """네이버(메인) → 다나와(보조) 순으로 최저가를 구한다.
+
+    catalog_id 로 정밀 추적하는 모델은, 네이버에서 그 카탈로그를 못 찾아도
+    다나와(다른 SKU)로 폴백하지 않는다 (엉뚱한 모델 섞임 방지).
+    """
+    pinned = bool(model.get("catalog_id"))
     try:
         best = search_naver_lowest(model)
         if best:
             return best
-        print(f"  [naver] 조건에 맞는 상품 없음 → 다나와 시도")
     except Exception as e:  # noqa: BLE001
-        print(f"  [naver] 조회 실패 → 다나와 시도: {e}")
+        print(f"  [naver] 조회 실패: {e}")
 
+    if pinned:
+        return None
+    print("  [naver] 조건에 맞는 상품 없음 → 다나와 시도")
     return search_danawa_lowest(model)
 
 

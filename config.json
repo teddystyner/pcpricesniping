@@ -3,43 +3,27 @@
   "models": [
     {
       "id": "samsung-galaxybook4",
-      "name": "삼성 갤럭시북4 (16GB/512GB)",
-      "query": "삼성 갤럭시북4 16GB 512GB",
-      "include_keywords": ["갤럭시북4"],
-      "keyword_groups": [
-        ["16gb", "16g"],
-        ["512gb", "512g", "ssd512"]
-      ],
-      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "리퍼비시", "리퍼브", "재생", "리컨디션", "전시", "전시품", "반품", "a급", "b급", "액정", "정품스킨", "스킨", "256gb", "256g", "128gb", "1tb"],
-      "min_price": 850000,
-      "max_price": 1600000
+      "name": "삼성 갤럭시북4 NT750XGR-A71A (i7/16GB/512GB)",
+      "query": "삼성 갤럭시북4 NT750XGR-A71A 16GB 512GB",
+      "catalog_id": "52646775138",
+      "min_price": 700000,
+      "max_price": 2000000
     },
     {
       "id": "lg-gram",
-      "name": "LG 그램 (신형/16GB/512GB)",
-      "query": "LG 그램 2025 16GB 512GB",
-      "include_keywords": ["그램"],
-      "keyword_groups": [
-        ["16gb", "16g"],
-        ["512gb", "512g", "ssd512"]
-      ],
-      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "리퍼비시", "리퍼브", "재생", "리컨디션", "전시", "전시품", "반품", "a급", "b급", "액정", "스킨", "256gb", "256g", "1tb", "11세대", "12세대", "13세대", "10세대", "zb95", "z90p", "z90q", "z95p"],
-      "min_price": 1100000,
-      "max_price": 1700000
+      "name": "LG 그램 16Z90S (Ultra/16GB/512GB)",
+      "query": "LG 그램 16Z90S 512GB",
+      "catalog_id": "55023661527",
+      "min_price": 700000,
+      "max_price": 2000000
     },
     {
       "id": "lenovo-ideapad-slim5",
-      "name": "레노버 아이디어패드 Slim5 (16GB/512GB)",
-      "query": "레노버 아이디어패드 슬림5 16GB 512GB",
-      "include_keywords": ["아이디어패드"],
-      "any_keywords": ["slim5", "슬림5"],
-      "keyword_groups": [
-        ["16gb", "16g"],
-        ["512gb", "512g", "ssd512"]
-      ],
-      "exclude_keywords": ["케이스", "파우치", "충전기", "필름", "거치대", "가방", "중고", "리퍼", "리퍼비시", "리퍼브", "재생", "리컨디션", "전시", "전시품", "반품", "a급", "b급", "액정", "스킨", "slim1", "슬림1", "slim3", "슬림3", "slim5x", "슬림5x", "snapdragon", "스냅드래곤", "코파일럿", "copilot", "256gb", "256g", "128gb", "1tb"],
-      "min_price": 850000,
-      "max_price": 1500000
+      "name": "레노버 아이디어패드 Slim5 16AHP9 (라이젠/16GB/512GB)",
+      "query": "레노버 아이디어패드 슬림5 16AHP9 16GB 512GB",
+      "catalog_id": "54910510051",
+      "min_price": 700000,
+      "max_price": 2000000
     }
   ]
 }
