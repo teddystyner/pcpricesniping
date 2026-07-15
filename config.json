@@ -27,17 +27,21 @@
     },
     {
       "id": "desktop-8600g-16gb",
-      "name": "조립PC DeskMini X600 8600G (16GB/512GB, 디앤디컴)",
+      "name": "조립PC DeskMini X600 8600G (16GB/512GB, 디앤디컴 유통)",
       "query": "ASRock DeskMini X600 8600G 16GB 512GB",
-      "catalog_id": "89014950946",
+      "include_keywords": ["deskmini", "x600", "8600g"],
+      "keyword_groups": [["16gb"], ["512gb"]],
+      "exclude_keywords": ["32gb", "1tb", "2tb", "256gb", "128gb", "중고", "리퍼", "리퍼비시", "렌탈", "대여"],
       "min_price": 450000,
       "max_price": 1200000
     },
     {
       "id": "desktop-8600g-32gb-512",
-      "name": "조립PC DeskMini X600 8600G (32GB/512GB)",
-      "query": "라이젠 8600G 컴퓨터 32GB 512GB",
-      "catalog_id": "89570251861",
+      "name": "조립PC DeskMini X600 8600G (32GB/512GB, 디앤디컴 유통)",
+      "query": "ASRock DeskMini X600 8600G 32GB 512GB",
+      "include_keywords": ["deskmini", "x600", "8600g"],
+      "keyword_groups": [["32gb"], ["512gb"]],
+      "exclude_keywords": ["16gb", "8gb", "1tb", "2tb", "256gb", "128gb", "중고", "리퍼", "리퍼비시", "렌탈", "대여"],
       "min_price": 500000,
       "max_price": 1400000
     }
