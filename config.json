@@ -27,9 +27,9 @@
     },
     {
       "id": "desktop-8600g-16gb",
-      "name": "조립PC AG861 8600G (16GB/512GB)",
-      "query": "라이젠 8600G 컴퓨터 16GB 512GB",
-      "catalog_id": "59386482653",
+      "name": "조립PC DeskMini X600 8600G (16GB/512GB, 디앤디컴)",
+      "query": "ASRock DeskMini X600 8600G 16GB 512GB",
+      "catalog_id": "89014950946",
       "min_price": 450000,
       "max_price": 1200000
     },
