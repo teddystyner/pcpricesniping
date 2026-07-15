@@ -44,19 +44,21 @@ def main() -> None:
         shown = 0
         for it in items:
             cid = _catalog_id_of(it)
-            # 카탈로그(가격비교)만, 중복 제거
-            if not cid or cid in seen or "/catalog/" not in (it.get("link") or ""):
+            if not cid or cid in seen:
                 continue
             seen.add(cid)
+            is_catalog = "/catalog/" in (it.get("link") or "")
+            tag = "카탈로그" if is_catalog else "스토어  "
             title = _strip_tags(it.get("title", ""))
             price = it.get("lprice", "?")
-            print(f"  카탈로그ID {cid:>14}  |  {int(price):>9,}원  |  {title}")
+            mall = it.get("mallName", "")
+            print(f"  [{tag}] ID {cid:>14} | {int(price):>9,}원 | {mall[:10]:<10} | {title}")
             shown += 1
-            if shown >= 15:
+            if shown >= 20:
                 break
 
         if shown == 0:
-            print("  카탈로그(가격비교) 후보가 없습니다. 검색어를 바꿔보세요.")
+            print("  후보가 없습니다. 검색어를 바꿔보세요.")
         print()
 
 
