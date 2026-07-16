@@ -46,25 +46,46 @@ def search_naver_lowest(model: dict) -> dict | None:
     max_price = model.get("max_price")
 
     # --- 카탈로그 고정 모드 (정밀 추적) ---
+    # 주의: 네이버 카탈로그는 여러 판매자가 묶이는데, 그중 스펙이 다른(예: 256GB)
+    # 매물이 같은 카탈로그ID로 잘못 태깅되는 경우가 있다. catalog_id 일치만으로
+    # 신뢰하지 말고, title_matches 로 스펙까지 재검증한 뒤 최저가를 고른다.
     if catalog_id:
+        best = None
+        rejected = []
         for it in items:
             if _catalog_id_of(it) != catalog_id:
                 continue
+            title = _strip_tags(it.get("title", ""))
+
+            has_spec_filter = bool(model.get("keyword_groups") or model.get("exclude_keywords"))
+            if has_spec_filter and not title_matches(title, model):
+                rejected.append((it.get("lprice"), title))
+                continue
+
             try:
                 price = int(it.get("lprice") or 0)
             except (ValueError, TypeError):
                 continue
             if price <= 0:
                 continue
-            return {
+
+            cand = {
                 "price": price,
-                "title": _strip_tags(it.get("title", "")),
+                "title": title,
                 "link": it.get("link"),
                 "mall": it.get("mallName") or "네이버쇼핑",
                 "source": "naver",
             }
-        print(f"  [naver] 지정 카탈로그({catalog_id}) 미발견 → 다나와 시도")
-        return None
+            if best is None or price < best["price"]:
+                best = cand
+
+        if best is None and rejected:
+            print(f"  [naver] 카탈로그({catalog_id}) 매물은 있으나 스펙 불일치로 전부 제외:")
+            for lprice, title in rejected[:8]:
+                print(f"       - {lprice}원 | {title}")
+        elif best is None:
+            print(f"  [naver] 지정 카탈로그({catalog_id}) 미발견 → 다나와 시도")
+        return best
 
     # --- 키워드/스펙 필터 모드 ---
     best = None

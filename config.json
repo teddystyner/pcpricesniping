@@ -6,6 +6,8 @@
       "name": "삼성 갤럭시북4 NT750XGR-A71A (i7/16GB/512GB)",
       "query": "삼성 갤럭시북4 NT750XGR-A71A 16GB 512GB",
       "catalog_id": "52646775138",
+      "keyword_groups": [["512gb", "512g"]],
+      "exclude_keywords": ["256gb", "256g", "128gb", "1tb", "중고", "리퍼", "리퍼비시", "리퍼브", "재생", "전시", "전시품", "반품"],
       "min_price": 700000,
       "max_price": 2000000
     },
@@ -14,6 +16,8 @@
       "name": "LG 그램 16Z90S (Ultra/16GB/512GB)",
       "query": "LG 그램 16Z90S 512GB",
       "catalog_id": "55023661527",
+      "keyword_groups": [["512gb", "512g"]],
+      "exclude_keywords": ["256gb", "256g", "128gb", "1tb", "중고", "리퍼", "리퍼비시", "리퍼브", "재생", "전시", "전시품", "반품"],
       "min_price": 700000,
       "max_price": 2000000
     },
@@ -22,6 +26,8 @@
       "name": "레노버 아이디어패드 Slim5 16AHP9 (라이젠/16GB/512GB)",
       "query": "레노버 아이디어패드 슬림5 16AHP9 16GB 512GB",
       "catalog_id": "54910510051",
+      "keyword_groups": [["512gb", "512g"]],
+      "exclude_keywords": ["256gb", "256g", "128gb", "1tb", "중고", "리퍼", "리퍼비시", "리퍼브", "재생", "전시", "전시품", "반품", "slim5x", "슬림5x", "snapdragon", "스냅드래곤"],
       "min_price": 700000,
       "max_price": 2000000
     },
