@@ -2,7 +2,7 @@
   "samsung-galaxybook4": {
     "name": "삼성 갤럭시북4 NT750XGR-A71A (i7/16GB/512GB)",
     "last_price": 1448000,
-    "last_seen": "2026-07-22 11:08 KST",
+    "last_seen": "2026-07-22 22:40 KST",
     "last_title": "삼성전자 갤럭시북4 NT750XGR-A71A 16GB, 512GB",
     "last_link": "https://search.shopping.naver.com/catalog/52646775138",
     "last_mall": "네이버",
@@ -97,13 +97,17 @@
       {
         "t": "2026-07-22 11:08 KST",
         "price": 1448000
+      },
+      {
+        "t": "2026-07-22 22:40 KST",
+        "price": 1448000
       }
     ]
   },
   "lg-gram": {
     "name": "LG 그램 16Z90S (Ultra/16GB/512GB)",
-    "last_price": 1350000,
-    "last_seen": "2026-07-22 11:08 KST",
+    "last_price": 1669000,
+    "last_seen": "2026-07-22 22:40 KST",
     "last_title": "LG전자 LG그램 16Z90S-GAOWK RAM 16GB, 512GB",
     "last_link": "https://search.shopping.naver.com/catalog/55023661527",
     "last_mall": "네이버",
@@ -198,13 +202,17 @@
       {
         "t": "2026-07-22 11:08 KST",
         "price": 1350000
+      },
+      {
+        "t": "2026-07-22 22:40 KST",
+        "price": 1669000
       }
     ]
   },
   "lenovo-ideapad-slim5": {
     "name": "레노버 아이디어패드 Slim5 16AHP9 (라이젠/16GB/512GB)",
     "last_price": 1750000,
-    "last_seen": "2026-07-22 11:08 KST",
+    "last_seen": "2026-07-22 22:40 KST",
     "last_title": "레노버 아이디어패드 Slim5 16AHP9 83DD000VKR RAM 16GB, 512GB",
     "last_link": "https://search.shopping.naver.com/catalog/54910510051",
     "last_mall": "네이버",
@@ -299,13 +307,17 @@
       {
         "t": "2026-07-22 11:08 KST",
         "price": 1750000
+      },
+      {
+        "t": "2026-07-22 22:40 KST",
+        "price": 1750000
       }
     ]
   },
   "desktop-8600g-16gb": {
     "name": "조립PC DeskMini X600 8600G (16GB/512GB, 디앤디컴 유통)",
     "last_price": 1058550,
-    "last_seen": "2026-07-22 11:08 KST",
+    "last_seen": "2026-07-22 22:40 KST",
     "last_title": "에즈락 DeskMini X600 8600G 120W M.2 대원씨티에스 (16GB, M.2 512GB) 베사마운트 USB 확장포트 포함",
     "last_link": "https://smartstore.naver.com/main/products/11091524569",
     "last_mall": "디아씨앤씨",
@@ -380,13 +392,17 @@
       {
         "t": "2026-07-22 11:08 KST",
         "price": 1058550
+      },
+      {
+        "t": "2026-07-22 22:40 KST",
+        "price": 1058550
       }
     ]
   },
   "desktop-8600g-32gb-512": {
     "name": "조립PC DeskMini X600 8600G (32GB/512GB, 디앤디컴 유통)",
     "last_price": 1338000,
-    "last_seen": "2026-07-22 11:08 KST",
+    "last_seen": "2026-07-22 22:40 KST",
     "last_title": "에즈락 DeskMini X600 8600G 120W M.2 대원씨티에스 (32GB, M.2 512GB) 베사마운트 USB 확장포트 포함",
     "last_link": "https://smartstore.naver.com/main/products/11092110944",
     "last_mall": "디아씨앤씨",
@@ -460,6 +476,10 @@
       },
       {
         "t": "2026-07-22 11:08 KST",
+        "price": 1338000
+      },
+      {
+        "t": "2026-07-22 22:40 KST",
         "price": 1338000
       }
     ]
