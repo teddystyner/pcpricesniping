@@ -521,9 +521,9 @@
   "desktop-8600g-16gb": {
     "name": "조립PC DeskMini X600 8600G (16GB/512GB, 디앤디컴 유통)",
     "last_price": 1139980,
-    "last_seen": "2026-10-01 02:28 KST",
+    "last_seen": "2026-10-01 12:45 KST",
     "last_title": "ASRockASRockDeskMiniX6008600G120W M.2 디앤디컴 (16GB, M.2512GB)",
-    "last_link": "https://prod.danawa.com/bridge/go_link_goods.php?cate_c1=860&cate_c2=867&cate_c3=59075&cate_c4=59099&cmpny_c=TY811D&link_prod_c=13651174616&keyword=ASRock+DeskMini+X600+8600G+16GB+512GB&r=17907893291616&cate=112756",
+    "last_link": "https://prod.danawa.com/bridge/go_link_goods.php?cate_c1=860&cate_c2=867&cate_c3=59075&cate_c4=59099&cmpny_c=TY811D&link_prod_c=13651174616&keyword=ASRock+DeskMini+X600+8600G+16GB+512GB&r=17908263577926&cate=112756",
     "last_mall": "다나와",
     "last_source": "danawa",
     "lowest_ever": 1058550,
@@ -1152,17 +1152,21 @@
       {
         "t": "2026-10-01 02:28 KST",
         "price": 1139980
+      },
+      {
+        "t": "2026-10-01 12:45 KST",
+        "price": 1139980
       }
     ]
   },
   "desktop-8600g-32gb-512": {
     "name": "조립PC DeskMini X600 8600G (32GB/512GB, 디앤디컴 유통)",
-    "last_price": 1335650,
-    "last_seen": "2026-07-31 11:21 KST",
-    "last_title": "에즈락 DeskMini X600 8600G 120W M.2 대원씨티에스 (32GB, M.2 512GB) 베사마운트 USB 확장포트 포함",
-    "last_link": "https://smartstore.naver.com/main/products/11092110944",
-    "last_mall": "디아씨앤씨",
-    "last_source": "naver",
+    "last_price": 1373300,
+    "last_seen": "2026-10-01 12:45 KST",
+    "last_title": "ASROCK에즈락ASRockDeskMiniX6008600G120W M.2 대원씨티에스 (32GB, M.2512GB)",
+    "last_link": "https://prod.danawa.com/bridge/go_link_goods.php?cate_c1=860&cate_c2=867&cate_c3=59075&cate_c4=59099&cmpny_c=TH201&link_prod_c=7725387369&keyword=ASRock+DeskMini+X600+8600G+32GB+512GB&r=17908263609774&cate=112756",
+    "last_mall": "다나와",
+    "last_source": "danawa",
     "lowest_ever": 1335650,
     "last_alert_price": null,
     "points": [
@@ -1305,6 +1309,10 @@
       {
         "t": "2026-07-31 11:21 KST",
         "price": 1335650
+      },
+      {
+        "t": "2026-10-01 12:45 KST",
+        "price": 1373300
       }
     ]
   }
