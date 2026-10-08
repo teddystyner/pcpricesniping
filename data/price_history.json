@@ -521,9 +521,9 @@
   "desktop-8600g-16gb": {
     "name": "조립PC DeskMini X600 8600G (16GB/512GB, 디앤디컴 유통)",
     "last_price": 1095770,
-    "last_seen": "2026-10-08 13:09 KST",
+    "last_seen": "2026-10-09 03:19 KST",
     "last_title": "ASROCK에즈락ASRockDeskMiniX6008600G120W M.2 대원씨티에스 (16GB, M.2512GB)",
-    "last_link": "https://prod.danawa.com/bridge/go_link_goods.php?cate_c1=860&cate_c2=867&cate_c3=59075&cate_c4=59099&cmpny_c=TH201&link_prod_c=7724912633&keyword=ASRock+DeskMini+X600+8600G+16GB+512GB&r=17914325567848&cate=112756",
+    "last_link": "https://prod.danawa.com/bridge/go_link_goods.php?cate_c1=860&cate_c2=867&cate_c3=59075&cate_c4=59099&cmpny_c=TH201&link_prod_c=7724912633&keyword=ASRock+DeskMini+X600+8600G+16GB+512GB&r=17914835742517&cate=112756",
     "last_mall": "다나와",
     "last_source": "danawa",
     "lowest_ever": 1058550,
@@ -1211,6 +1211,10 @@
       },
       {
         "t": "2026-10-08 13:09 KST",
+        "price": 1095770
+      },
+      {
+        "t": "2026-10-09 03:19 KST",
         "price": 1095770
       }
     ]
